@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani1 {
+            100%{
+                background-color: blue;
+            }   
+
+
+            0%{
+                background-color: aqua;
+            }
+        }
+
+        @keyframes ani2 {
+            0%{
+                background-color: blue;
+            }            
+
+            100%{
+                background-color: aqua;
+            }
+        }
+
+
+
+        .container{
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        
+
+        .item1{
+            flex-grow: 1;
+            animation: ani1 3s infinite;
+            background-color: aqua;
+        }
+
+        .item2{
+            flex-grow: 1;
+            animation: ani2 3s infinite;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">a</div>
+        <div class="item2">b</div>
+        <div class="item1">c</div>
+        <div class="item2">d</div>
+        <div class="item1">e</div>
+    </div>
+</body>
+</html>
